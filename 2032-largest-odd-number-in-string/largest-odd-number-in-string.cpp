@@ -14,11 +14,8 @@ public:
             return ans;
         }
         else{
-            for(int j=odd;j>=0;j--){
-                ans.push_back(num[j]);
-            }
+            ans=num.substr(0,odd+1);
         }
-        reverse(ans.begin(),ans.end());
         return ans;
     }
 };
